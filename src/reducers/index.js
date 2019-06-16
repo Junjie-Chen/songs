@@ -1,0 +1,20 @@
+const songsReducer = () => {
+  return [
+    {
+      title: 'In My Blood',
+      duration: '3:31'
+    },
+    {
+      title: 'Call You Mine',
+      duration: '3:37'
+    },
+    {
+      title: 'Just the Way You Are',
+      duration: '3:40'
+    },
+    {
+      title: 'Who Do You Love',
+      duration: '3:46'
+    }
+  ];
+};
