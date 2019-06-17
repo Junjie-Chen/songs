@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { selectSong } from '../actions';
 
 class SongList extends Component {
   renderList() {
@@ -24,4 +25,10 @@ const mapStateToProps = state => ({
   songs: state.songs
 });
 
-export default connect(mapStateToProps)(SongList);
+const mapDispatchToProps = dispatch => ({
+  selectSong(song) {
+    dispatch(selectSong(song));
+  }
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SongList);
