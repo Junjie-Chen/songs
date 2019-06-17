@@ -5,4 +5,8 @@ const SongDetail = () => {
   return <div>Song Detail</div>;
 };
 
-export default connect()(SongDetail);
+const mapStateToProps = state => ({
+  selectedSong: state.selectedSong
+});
+
+export default connect(mapStateToProps)(SongDetail);
