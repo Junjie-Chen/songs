@@ -6,7 +6,12 @@ const SongDetail = props => {
     return <div>Select a Song</div>;
   }
 
-  return <div>{props.selectedSong.title}</div>;
+  return (
+    <div>
+      <h3>Details:</h3>
+      <p>Title: {props.selectedSong.title}<br />Duration: {props.selectedSong.duration}</p>
+    </div>
+  );
 };
 
 const mapStateToProps = state => ({
